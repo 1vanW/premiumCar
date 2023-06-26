@@ -1,0 +1,40 @@
+.most-popular{
+
+  padding-bottom: 80px;
+
+  &__list{
+    @include flex-all-sb;
+    gap: 30px;
+
+    @include mobile{
+      flex-wrap: wrap;
+    }
+  }
+  &__img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__item{
+    position: relative;
+
+  }
+  &__title{
+    margin-bottom: 27px;
+    @include big-tablet{
+      text-align: center;
+    }
+  }
+  &__subtitle{
+    margin-bottom: 11px;
+    @include big-tablet{
+      font-size: 18px;
+    }
+  }
+  &__category{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+}

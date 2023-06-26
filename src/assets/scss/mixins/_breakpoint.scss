@@ -29,3 +29,15 @@
     @content;
   }
 }
+@mixin big-tablet {
+  @media (max-width: (1170px)) {
+    @content;
+  }
+
+}
+
+@mixin big-mobile {
+  @media (max-width: (640px)) {
+    @content;
+  }
+}

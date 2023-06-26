@@ -1,0 +1,147 @@
+.header{
+  background-color: var(--color-black);
+  color: white ;
+  padding-top: 31px;
+  padding-bottom: 33px;
+
+  &__nav{
+    @include tablet{
+      position: fixed;
+      padding: 30px;
+      padding-top: 80px;
+      width: 60%;
+      height: 100vh;
+      max-width: 300px;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--color-TuftsBlue);
+      transform: translateX(100%);
+      transition: transform 0.6s ease-in-out;
+    }
+
+    &--visible{
+
+      transform: translateX(0);
+    }
+  }
+
+
+
+
+
+  &__list{
+    @include tablet{
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+  }
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    @include tablet{
+      &:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 20px;
+
+      }
+    }
+
+  }
+
+  &__link{
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover{
+      color: var(--color-TuftsBlue);
+    }
+
+    @include tablet{
+      font-size: 22px;
+
+      &:hover{
+        color: var(--color-black);
+
+      }
+
+    }
+
+
+  }
+}
+
+
+.header-search{
+
+
+  &__icon{
+    width: 16px;
+    height: 17px;
+    fill: #fff;
+    transition: fill 0.3s ease-in-out;
+
+    &:hover{
+      fill: var(--color-TuftsBlue);
+    }
+  }
+}
+
+
+.header__burger{
+  display: none;
+  z-index: 1000;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+
+  span{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    left: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out,opacity 0.3s ease-in-out;
+    &:nth-child(1){
+      transform: translateY(-10px);
+    }
+    &:nth-child(3){
+      transform: translateY(10px);
+    }
+  }
+
+  @include tablet{
+    display: block;
+  }
+
+  &--active{
+
+    span{
+      &:nth-child(2){
+        opacity: 0;
+      }
+
+      &:nth-child(1){
+        transform: rotate(45deg);
+      }
+      &:nth-child(3){
+        transform: rotate(-45deg);
+      }
+    }
+
+
+  }
+
+}
