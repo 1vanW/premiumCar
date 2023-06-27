@@ -1049,6 +1049,9 @@ a:focus {
 @media (max-width: 1170px) {
     .article-hero__main--grid {
         gap: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1155,10 +1158,9 @@ a:focus {
 
 @media (max-width: 1170px) {
     .article-right {
-        grid-column: 10 span;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1175,6 +1177,7 @@ a:focus {
     .article-right__blog {
         grid-column: 4 span;
         text-align: center;
+        max-width: 500px;
     }
 }
 
@@ -1220,6 +1223,11 @@ a:focus {
         display: flex;
         grid-gap: 20px;
         justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .article-popular__list {
         flex-wrap: wrap;
     }
 }
@@ -1276,6 +1284,7 @@ a:focus {
 @media (max-width: 1170px) {
     .article-instagram {
         grid-column: 10 span;
+        max-width: 500px;
     }
 }
 
@@ -1324,6 +1333,7 @@ a:focus {
 
 .article-tags {
     margin-bottom: 94px;
+    max-width: 500px;
 }
 
 @media (max-width: 1170px) {

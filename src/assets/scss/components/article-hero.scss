@@ -9,6 +9,9 @@
 
       @include big-tablet{
         gap : 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   }
@@ -109,10 +112,14 @@
 .article-right{
 
   @include big-tablet{
-    grid-column: 10 span;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 10px;
+    // grid-column: 10 span;
+    // display: grid;
+    // grid-template-columns: repeat(10, 1fr);
+    // gap: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
   }
 
@@ -127,6 +134,7 @@
     @include big-tablet{
       grid-column: 4 span;
       text-align: center;
+      max-width: 500px
 
 
     }
@@ -175,6 +183,9 @@
       display: flex;
       grid-gap: 20px;
       justify-content: center;
+    }
+
+    @include mobile{
       flex-wrap: wrap;
     }
 
@@ -230,6 +241,7 @@
   margin-bottom: 60px;
   @include big-tablet{
     grid-column: 10 span;
+    max-width: 500px;
   }
 
   &__title{
@@ -272,6 +284,7 @@
 
 .article-tags{
   margin-bottom: 94px;
+  max-width: 500px;
 
   @include big-tablet{
     grid-column: 10 span;
