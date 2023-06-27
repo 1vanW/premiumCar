@@ -629,7 +629,7 @@ a:focus {
 
 .category {
     display: inline-block;
-    padding: 0px 12px 1px;
+    padding: 2px 12px 1px;
     background-color: var(--color-TuftsBlue);
     border-radius: 3px;
 }
@@ -986,6 +986,14 @@ a:focus {
     }
 }
 
+@media (max-width: 576px) {
+    .section-article__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .news-article {
     position: relative;
 }
@@ -1066,19 +1074,10 @@ a:focus {
 
 @media (max-width: 1024px) {
     .article-hero__list {
-        grid-column: 7 span;
-    }
-}
-
-@media (max-width: 768px) {
-    .article-hero__list {
-        grid-column: 6 span;
-    }
-}
-
-@media (max-width: 576px) {
-    .article-hero__list {
-        grid-column: 5 span;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -1181,7 +1180,7 @@ a:focus {
 
 @media (max-width: 576px) {
     .article-right__blog {
-        grid-column: 6 span;
+        grid-column: 12 span;
     }
 }
 
@@ -1220,6 +1219,8 @@ a:focus {
     .article-popular__list {
         display: flex;
         grid-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -1254,6 +1255,7 @@ a:focus {
 @media (max-width: 768px) {
     .article-popular__subtitle {
         font-size: 16px;
+        max-width: 290px;
     }
 }
 
@@ -1344,18 +1346,20 @@ a:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 4px;
 }
 
 .article-tags__item {
-    padding: 10px 5px;
-    background-color: #EBEBEB;
-    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 .article-tags__link {
     font-size: 14px;
     transition: color 0.3s ease-in-out;
+    padding: 10px 5px;
+    background-color: #EBEBEB;
+    border-radius: 3px;
 }
 
 .article-tags__link:hover {
@@ -1418,6 +1422,10 @@ a:focus {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.article-pagination__item:nth-child(4) {
+    display: none;
+}
+
 .article-pagination__item:nth-child(2) {
     background-color: #000;
     color: #fff;
@@ -1463,6 +1471,12 @@ a:focus {
     }
 }
 
+@media (max-width: 576px) {
+    .article-pag__list {
+        justify-content: center;
+    }
+}
+
 .most-popular {
     padding-bottom: 80px;
 }
@@ -1477,6 +1491,7 @@ a:focus {
 @media (max-width: 576px) {
     .most-popular__list {
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1547,6 +1562,7 @@ a:focus {
 @media (max-width: 1024px) {
     .footer__content {
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1603,4 +1619,11 @@ a:focus {
 
 .footer-post__title {
     margin-bottom: 13px;
+}
+
+@media (max-width: 576px) {
+    .footer-post__title {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
 }

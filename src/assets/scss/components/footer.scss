@@ -27,6 +27,7 @@
 
     @include tablet{
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -35,6 +36,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 23px;
+
   }
 
   &__bottom{
@@ -86,6 +88,10 @@
   }
   &__title{
     margin-bottom: 13px;
+    @include mobile{
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
   }
 }
 

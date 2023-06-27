@@ -8,6 +8,7 @@
 
     @include mobile{
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
   &__img{
