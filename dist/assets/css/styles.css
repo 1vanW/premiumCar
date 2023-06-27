@@ -913,13 +913,8 @@ a:focus {
 
 @media (max-width: 640px) {
     .section-article__item {
-        grid-column: 7 span;
-    }
-}
-
-@media (max-width: 576px) {
-    .section-article__item {
-        grid-column: 8 span;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -981,12 +976,6 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-    .section-article__list {
-        grid-template-columns: repeat(11, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
     .section-article__list {
         display: flex;
         justify-content: center;

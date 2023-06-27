@@ -20,12 +20,10 @@
     }
 
     @include big-mobile{
-      grid-column: 7 span;
+     display: flex;
+     justify-content: center;
     }
 
-    @include mobile{
-      grid-column: 8 span;
-    }
 
 
     &:first-child{
@@ -75,13 +73,10 @@
    }
 
    @include small-tablet{
-    grid-template-columns: repeat(11,1fr);
-
-   }
-   @include mobile{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
    }
 
 
