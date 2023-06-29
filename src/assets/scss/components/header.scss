@@ -36,12 +36,17 @@
       margin: 0;
     }
 
+
   }
 
   &__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile{
+      justify-content: space-around;
+    }
   }
   &__item{
     @include tablet{

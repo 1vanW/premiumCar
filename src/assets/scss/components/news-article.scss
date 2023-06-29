@@ -69,7 +69,8 @@
   }
   &__list{
    @include tablet{
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(8,1fr);
+    justify-items: center;
    }
 
    @include small-tablet{

@@ -118,7 +118,7 @@ a {
   gap: 28px;
 
   @include big-tablet{
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(9,1fr);
   }
   @include tablet{
     grid-template-columns: repeat(6,1fr);

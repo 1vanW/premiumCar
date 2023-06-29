@@ -487,7 +487,7 @@ a:focus {
 
 @media (max-width: 1170px) {
     .grid {
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(9, 1fr);
     }
 }
 
@@ -797,6 +797,12 @@ a:focus {
     align-items: center;
 }
 
+@media (max-width: 576px) {
+    .header__container {
+        justify-content: space-around;
+    }
+}
+
 @media (max-width: 1024px) {
     .header__item:not(:last-child) {
         margin-right: 0;
@@ -976,7 +982,8 @@ a:focus {
 
 @media (max-width: 1024px) {
     .section-article__list {
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+        justify-items: center;
     }
 }
 
@@ -1593,6 +1600,13 @@ a:focus {
 
 .footer__list {
     margin-left: 0;
+}
+
+@media (max-width: 360px) {
+    .footer__list {
+        flex-direction: column;
+        grid-gap: 10px;
+    }
 }
 
 .footer__copyright {

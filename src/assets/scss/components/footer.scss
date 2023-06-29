@@ -55,6 +55,10 @@
 
   &__list{
     margin-left: 0;
+    @media (max-width: 360px) {
+      flex-direction: column;
+      grid-gap: 10px;
+    }
   }
   &__copyright{
 
