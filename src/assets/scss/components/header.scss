@@ -11,7 +11,6 @@
       padding-top: 80px;
       width: 100%;
       height: 100vh;
-      max-width: 300px;
       right: 0;
       top: 0;
       z-index: 1000;
@@ -20,7 +19,8 @@
     }
 
     &--visible{
-      background-color: var(--color-TuftsBlue);
+      background-color: rgba(	74,	144,	226, 0.7);
+      backdrop-filter: blur(20px);
       transform: translateX(0);
     }
   }
@@ -44,9 +44,6 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mobile{
-      justify-content: space-around;
-    }
   }
   &__item{
     @include tablet{
