@@ -82,6 +82,10 @@
 
 .header-search{
 
+  @include mobile{
+    display: none;
+  }
+
 
   &__icon{
     width: 16px;
