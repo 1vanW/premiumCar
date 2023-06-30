@@ -1,3 +1,22 @@
+.article{
+
+  &__title{
+    margin: 0;
+    padding: 0;
+    font-family: PTSans-Bold,sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #171717;
+    transition: color .3s ease-in-out;
+
+    &:hover{
+      color: var(--color-TuftsBlue);
+    }
+
+  }
+}
+
+
 .article-hero{
   position: relative;
   padding-bottom: 80px;
@@ -381,6 +400,10 @@
     position: relative;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
+    @media (max-width: 400px){
+      padding: 12px 16px;
+    }
+
     &:nth-child(4){
       display: none;
     }
@@ -388,6 +411,10 @@
     &:nth-child(2){
       background-color: #000 ;
       color: #fff;
+    }
+
+    &:nth-child(6){
+      display: none;
     }
 
     &:not(:nth-child(2)){
@@ -415,6 +442,9 @@
       color: #fff;
 
     }
+    @media (max-width: 400px){
+      font-size: 12px;
+    }
 
 
 
@@ -441,3 +471,4 @@
   }
 
 }
+

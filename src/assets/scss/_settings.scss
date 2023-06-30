@@ -276,17 +276,15 @@ a {
 
 .category{
   display: inline-block;
+
   padding: 2px 12px 1px;
   background-color: var(--color-TuftsBlue);
   border-radius: 3px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 
-
-  &__text{
-    color: #fff;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-  }
 }
 
 .article-meta{
@@ -297,8 +295,12 @@ a {
   color: #fff;
 
   &__top{
+
+    margin-bottom: 14px;
+    color: rgb(102, 102, 102);
+    font-family: PTSans-Italic, sans-serif;
     font-size: 14px;
-    margin-bottom: 5px;
+    line-height: 18px;
   }
 
   &__author{

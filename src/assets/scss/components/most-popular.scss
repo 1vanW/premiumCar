@@ -27,8 +27,14 @@
       text-align: center;
     }
   }
+
+  &__description{
+    padding: 0;
+  }
   &__subtitle{
+
     margin-bottom: 11px;
+    color: #171717;
     @include big-tablet{
       font-size: 18px;
     }
